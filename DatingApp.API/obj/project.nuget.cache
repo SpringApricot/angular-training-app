@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FKi5ZEoXpKHDAPOvYxdlICJWS4GpnTF3x35qCJAS60iySKY0vzoiutyOpmg5Bt5Ta8eVGze87eKxEZSz1D0XCw==",
+  "dgSpecHash": "p2N6zRpbXa7C7Hbjmv+ICydnrUXBPHKG/rrykiALK6+fl8jhO9z00LxJ98/mIlWuFEh8gz4C9QW9shPX9qyweQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Spring\\source\\repos\\udemyAngular1\\DatingApp\\DatingApp.API\\DatingApp.API.csproj",
+  "projectFilePath": "C:\\Users\\Spring\\Source\\Repos\\angular-training-app\\DatingApp.API\\DatingApp.API.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
