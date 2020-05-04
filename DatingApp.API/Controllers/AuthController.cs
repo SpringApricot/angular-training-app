@@ -1,14 +1,14 @@
-﻿using System;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
-using DatingApp.API.Data;
+﻿using DatingApp.API.Data;
 using DatingApp.API.DTOs;
 using DatingApp.API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using System;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace DatingApp.API.Controllers
 {
@@ -23,12 +23,12 @@ namespace DatingApp.API.Controllers
         {
             _repo = repo;
             _config = config;
-        } 
+        }
 
         [HttpPost("register")]
         public async Task<IActionResult> Register(UserToRegisterDto userToRegister)
         {
-           userToRegister.Username = userToRegister.Username.ToLower();
+            userToRegister.Username = userToRegister.Username.ToLower();
 
             if (await _repo.UserExists(userToRegister.Username))
                 return BadRequest("Username already exists");
@@ -69,7 +69,8 @@ namespace DatingApp.API.Controllers
 
             var tokenHandler = new JwtSecurityTokenHandler();
             var token = tokenHandler.CreateToken(tokenDescriptor);
-            return Ok(new {
+            return Ok(new
+            {
                 token = tokenHandler.WriteToken(token)
             });
         }
